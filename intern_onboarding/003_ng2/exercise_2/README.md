@@ -1,22 +1,7 @@
-# Angular 2 - Exercise 1 - Creating an app with NG-CLI
+# Angular 2 - Exercise 2 -
 
-Duration: 20minutes
+Duration: 20 minutes
 
-In this section we are going to create and start an Angular app using ng-cli. First of all, ensure you have the cli installed. Type `ng` at a command line.
-
-* No errors? Good.
-* Errors? Install with `npm install @angular/cli -g`
-
-Now create your app:
-
-    ng new app-name --style scss --routing true
-
-Start the server
-
-	cd app-name
-    ng serve
-
-Now visit http://localhost:4200 in a browser to see your new app.
 
 
 ## Challenge
