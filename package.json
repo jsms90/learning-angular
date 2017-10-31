@@ -1,0 +1,19 @@
+{
+  "name": "teach-ins",
+  "version": "1.0.0",
+  "description": "Beamery Lunchtime Teach Ins",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeedJobs/teach-ins.git"
+  },
+  "author": "Beamery",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SeedJobs/teach-ins/issues"
+  },
+  "homepage": "https://github.com/SeedJobs/teach-ins#readme"
+}
