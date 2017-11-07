@@ -1,4 +1,4 @@
-# Angular 2 - Exercise 2 -
+# Angular 2 - Exercise 2 - Introducing Components
 
 Duration: 20 minutes
 
