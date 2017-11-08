@@ -1,9 +1,22 @@
 
-<h1>
-  Welcome to {{title}}!
+<h1 title="Hello" [innerHTML]="txt">
+  Welcome to {{title}}!!!
 </h1>
 
-<p>Hello World</p>
+<hr />
 
+<input [disabled]="isDisabled" (input)="val=$event.target.value">{{val}}
+
+<hr />
+
+<button (click)="count = count + 1">Click me! {{count}}</button>
+
+<hr />
+
+<div
+	style="width:500px; height: 500px; border:1px solid green"
+	(mousemove)="handleMousemove($event)">
+		{{x}}, {{y}}
+</div>
 
 <router-outlet></router-outlet>
