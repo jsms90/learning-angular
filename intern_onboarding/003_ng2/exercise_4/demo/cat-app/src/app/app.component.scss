@@ -1,0 +1,15 @@
+$pink: #f22;
+
+$base: 22px;
+$large: $base * 2;
+
+
+h1 {
+	color: lighten($pink, 20%);
+	font-size: $large;
+}
+
+p {
+	color: $pink;
+	font-size:$base;
+}

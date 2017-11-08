@@ -48,7 +48,7 @@ To pop that bad boy on the page, open your app.component.html file, and type:
 
 ## Challenge
 
-* Create page header and footer components. Make them look pretty, and stick them in your app.
+Create page header and footer components. Make them look pretty, and stick them in your app.
 
 
 ## Notes to Instructor

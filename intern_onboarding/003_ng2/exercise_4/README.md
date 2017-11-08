@@ -1,4 +1,4 @@
-# Angular 2 - Exercise 4 - PAssing values into components
+# Angular 2 - Exercise 4 - Passing values into components
 
 Duration: 20 minutes
 
@@ -81,16 +81,16 @@ Create a component that will render this cat in some happy way.
 
 We can iterate over an array in a template like this:
 
-    <div *ngFor="cat of cats">
+    <div *ngFor="let cat of cats">
       <cat cat="cat"></cat>
     </div>
 
 In your `application.component.ts`, create an array of cats:
 
     cats:Array<any> = [
-      cat1,
-      cat2,
-      cat3
+      {name: 'miow'},
+      {name: 'moo'},
+      {name: 'muff'},
     ]
 
 Now use ngFor and the `<cat>` component to output all the cats in the array.
