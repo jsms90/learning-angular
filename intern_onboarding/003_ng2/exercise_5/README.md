@@ -51,12 +51,16 @@ If we want to output custom data, we can pass that data to the emit function:
 
 ## Challenge
 
-    Create the miow counter above
+    Create the miow counter above.
 
 ## Extra hard challenge
 
 Create a CatForm component. Whe you fill it in and submit it, it emits a new cat object.
 
 Add this new cat object to the list of cats. Output this list in another component.
+
+## Further Reading
+
+Front End Design Principles - https://paper.dropbox.com/doc/Front-End-Design-Principles-TKTeoFJq9qbqdc6wBPNaq
 
 ## Notes to Instructor
