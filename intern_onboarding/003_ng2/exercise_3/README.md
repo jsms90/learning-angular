@@ -1,55 +1,56 @@
-# Angular 2 - Exercise 3 - HTML plus
+# Angular 2 - Exercise 3 - Introducing Components
 
 Duration: 20 minutes
 
-## Angular's templating language is rich and deep.
+## What are components?
 
-When you write an Angular template, you are not writing HTML at all. Instead you are writing instructions to the Angular compiler that will be turned into functions, that will ultimately output DOM nodes that will be put onto the page.
+Angular is component driven. It's all about the components.
 
-In the template we get direct access to the real DOM. That's right, the template lets you do DOM scripting.
+A component is similar to a DOM node. You stick it on the page, and it does something. Imaging an Anchor tag:
 
-## Settng Attributes
+    <a>Hello from the anchor</a>
 
-You can set any [attribute] on any element on the page. For example the disabled attribute.
+You stick it on the page and it sits around being all hyperlinky. Word.
 
-    <button [disabled]="true">
+If we want to pass data into it, we use an attribute:
 
-You can set the value in a form:
+    <a href="http://lolcats.com">
 
-    <input [value]="'cats'">
+If we want to get data out of it, we use an event:
 
-Any attrubute can be set, even the exotic ones. Right click an element, then inspect it to find its attributes. See all that craziness in there? You can have all of that craziness. It's all for you. All of it.
+    <a onclick="handleCatClick">
 
-## Listening to events
+Angular 2 lets you **create your own new tags that have behaviour, styling, attributes and events that you will define.**
 
-We can also handle (events) using (round braces).
+    <cat name="molly" age="42" on-miow="miows = miows - 1">
 
-    <div (click)="catStatus='cool'">Cats are {{catStatus}}</div>
+## Making a component with the cli
 
-## Showing elements
+To make a component we ideally need four files:
 
-We can conditionally hide elements using *ngIf
+1. HTML template
+2. CSS template
+3. The component definition, written in TypeScript
+4. A test. Oh yes. We write tests.
 
-    <div *ngIf="catStatus=='cool'">Cats are cool</div>
+We can make all those by hand, if we had the time or inclination, but it's much easier to get a start using the ng-cli. At the command line, type:
 
-See that star? Yes, it's weird. Deal with it.
+    ng generate component cat
+
+Check it out, you have a cat component.
+
+## Putting your component on the page
+
+To pop that bad boy on the page, open your app.component.html file, and type:
+
+    <cat></cat>
 
 
 ## Challenge
 
-Given what you now know, it should be possible for you to create a simple tabbed pane.
-
-* Make yourself a row of buttons. When you click them, it sets the value of tab.
-* Now make some tab content in divs. Conditionally show or hide those divs
-
-
-## Challenge 2
-
-You might also make a counter. When you click a button, increment a counter value. Make sure you output {{counter}} somewhere on the page.
-
-You will need to initialise the value for the counter variable somewhere on the page.
+* Create page header and footer components. Make them look pretty, and stick them in your app.
 
 
 ## Notes to Instructor
 
-To complelte this, the students will need to know how to create an attribute on the component.
+The goal here is to learn what a component is, and to learn about the ng-cli component generator.
