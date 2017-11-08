@@ -8,7 +8,7 @@ When you write an Angular template, you are not writing HTML at all. Instead you
 
 In the template we get direct access to the real DOM. That's right, the template lets you do DOM scripting.
 
-## Settng Attributes
+## Setting Attributes
 
 You can set any [attribute] on any element on the page. For example the disabled attribute.
 

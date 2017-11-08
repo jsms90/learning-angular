@@ -1,4 +1,4 @@
-# Angular 2 - Exercise 4 - Putting Components Inside One Another
+# Angular 2 - Exercise 4 - PAssing values into components
 
 Duration: 20 minutes
 
@@ -22,13 +22,13 @@ Here's the same, but with a property:
 
 Note the quotes in quotes. That's because this time, Morris is an expression. It can be evaluated. This means that **[Properties] do not have to be strings!**
 
-    <cat [age]="42 * 12.6">
+    <app-cat [age]="42 * 12.6">
 
-    <cat [data]="{name:'Mog'}">
+    <app-cat [data]="{name:'Mog'}">
 
     <histogram [data]="mydata">
 
-## We cant just set any old properties
+## We can't just set any old properties
 
 Angular 2 is strict. We can't just go setting any properties we feel like. We have to declare them, using the component decorator.
 
@@ -82,7 +82,7 @@ Create a component that will render this cat in some happy way.
 We can iterate over an array in a template like this:
 
     <div *ngFor="cat of cats">
-      {{cat.name}}
+      <cat cat="cat"></cat>
     </div>
 
 In your `application.component.ts`, create an array of cats:

@@ -22,7 +22,7 @@ If we want to get data out of it, we use an event:
 
 Angular 2 lets you **create your own new tags that have behaviour, styling, attributes and events that you will define.**
 
-    <cat name="molly" age="42" on-miow="miows = miows - 1">
+    <app-cat name="molly" age="42" on-miow="miows = miows - 1">
 
 ## Making a component with the cli
 
@@ -43,7 +43,7 @@ Check it out, you have a cat component.
 
 To pop that bad boy on the page, open your app.component.html file, and type:
 
-    <cat></cat>
+    <app-cat></app-cat>
 
 
 ## Challenge
