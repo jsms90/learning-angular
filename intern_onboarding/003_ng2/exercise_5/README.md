@@ -2,6 +2,8 @@
 
 Duration: 20 minutes
 
+
+
 ## Output with Events
 
 If we want to send data back up out of an html element, we use an event:
@@ -37,10 +39,11 @@ Now we can listen to this event:
         miowCount: {{miowCount}}
     </p>
 
+
+
 ## Outputting data
 
 If we want to output custom data, we can pass that data to the emit function:
-
 
     <button (click)="miow.emit(cat)">
 
@@ -49,15 +52,21 @@ If we want to output custom data, we can pass that data to the emit function:
         Last cat was: {{lastCatToMiow.name}}
     </p>
 
+
+
 ## Challenge
 
-    Create the miow counter above.
+Create the miow counter above.
+
+
 
 ## Extra hard challenge
 
-Create a CatForm component. Whe you fill it in and submit it, it emits a new cat object.
+Create a CatForm component. When you fill it in and submit it, it emits a new cat object.
 
 Add this new cat object to the list of cats. Output this list in another component.
+
+
 
 ## Further Reading
 
