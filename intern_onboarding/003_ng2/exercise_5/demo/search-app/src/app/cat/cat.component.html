@@ -1,0 +1,14 @@
+<h1>
+  {{cat.name}}
+</h1>
+
+<p *ngIf="cat.weight">weight: {{cat.weight}}</p>
+
+<button (click)="attack.emit(cat)">Attack</button>
+<button (click)="run.emit(cat)">Run Away!</button>
+
+<pre>
+{{cat | json}}
+</pre>
+
+<input (input)="term = $event.target.value">{{term}}

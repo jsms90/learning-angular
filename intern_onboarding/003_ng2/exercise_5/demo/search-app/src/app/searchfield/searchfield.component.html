@@ -1,0 +1,4 @@
+
+	<input [value]="term" (input)="term=$event.target.value" /> {{term}}
+	<button (click)="search.emit(term)">Go</button>
+

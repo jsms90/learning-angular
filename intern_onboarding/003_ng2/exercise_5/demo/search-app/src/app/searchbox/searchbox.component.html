@@ -1,0 +1,6 @@
+<app-searchfield [term]="term" (search)="term=$event; search.emit($event)"></app-searchfield>
+<app-search-suggestions
+	(search)="term=$event; search.emit($event)"
+	[suggestions]="suggestions"
+	[term]="term"
+		></app-search-suggestions>
