@@ -6,13 +6,6 @@ Angular is component based. The job of a component is to manage a region of the 
 
 In this section we will look at what Services are - what Dependency Injection is, and how it works now in Angular 2.
 
-## DI is a pattern
-
-Dependency injection is a pattern in which a components dependencies are passed in from the outside by the framework.
-
-If a toaster needs bread, rather than having the toaster construct its own bread, the person requiring toast from the toaster inserts the bread. A more practical example might be an API accessor. We isolate the API code into a service object, then inject it into components where it is needed.
-
-This isolates our components one from another, and allows us to substitute mock components for real ones for testing if necessary.
 
 ## Creating a service
 
@@ -69,6 +62,10 @@ export class AppComponent {
 ## Dependency Injection
 
 Our Component receives a CatService, and yet we never manually made one. Angular has made one for us. We call this Dependency Injection.
+
+Dependency injection is a pattern in which a components dependencies are passed in from the outside by the framework.
+
+If a toaster needs bread, rather than having the toaster construct its own bread, the person requiring toast from the toaster inserts the bread. A more practical example might be an API accessor. We isolate the API code into a service object, then angular will take care of making it available where we need it.
 
 Notice the class constructor. It receives a catService of type CatService. This is enough for Angular to know that it must make a CatService and pass it in.
 
