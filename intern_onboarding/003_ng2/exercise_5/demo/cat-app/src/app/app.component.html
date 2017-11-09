@@ -2,8 +2,25 @@
   Welcome to Cats!!!
 </h1>
 
-<app-cat [cat]="tabby"></app-cat>
+<h2 *ngIf="attacker">
+	{{attacker.name}} attacked with {{attacker.armaments}}
+</h2>
+<h2 *ngIf="runAway">
+	{{runAway.name}} ran away
+</h2>
+<app-cat
+	[cat]="tabby"
+	(attack)="attacker = $event"
+	(run)="runAway =$event">
+</app-cat>
 
-<app-cat [cat]="shabby"></app-cat>
+<app-cat
+	[cat]="shabby"
+	(attack)="attacker = $event"
+	(run)="runAway =$event">
+</app-cat>
+
+
+<!-- <div *ngIf="attacker">{{attacker.name}} attacked with {{attacker.armaments}}</div> -->
 
 <router-outlet></router-outlet>

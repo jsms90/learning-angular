@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-cat',
@@ -8,6 +8,6 @@ import { Component, Input } from '@angular/core';
 export class CatComponent {
 
   @Input() cat = {}
-  @Input() toastLevel = 0
-
+  @Output() attack = new EventEmitter()
+  @Output() run = new EventEmitter()
 }
