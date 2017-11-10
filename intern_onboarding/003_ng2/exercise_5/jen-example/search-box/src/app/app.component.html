@@ -1,0 +1,7 @@
+<h1>Beautiful search component</h1>
+<app-search [placeholderText]="'cats are fat'" (search)="term=$event"></app-search>
+
+<p *ngIf="term">First {{term}}</p>
+<p *ngIf="term">Second {{term}}</p>
+<p *ngIf="term">Third {{term}}</p>
+<router-outlet></router-outlet>

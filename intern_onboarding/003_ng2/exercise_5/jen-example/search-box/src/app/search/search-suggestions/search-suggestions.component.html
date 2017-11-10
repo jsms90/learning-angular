@@ -1,0 +1,5 @@
+<ul>
+  <li [ngClass]="{selected: term=='cats playing the piano'}" (click)="search.emit('cats playing the piano')">cats playing the piano</li>
+  <li [ngClass]="{selected: term=='monorail cat'}" (click)="search.emit('monorail cat')">monorail cat</li>
+  <li [ngClass]="{selected: term=='grumpy cat'}" (click)="search.emit('grumpy cat')">grumpy cat</li>
+</ul>

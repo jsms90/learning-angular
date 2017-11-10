@@ -1,0 +1,2 @@
+<input [value]="term" [placeholder]="placeholderText" (input)="term=$event.target.value"/>
+<button (click)="search.emit(term)">Go</button>

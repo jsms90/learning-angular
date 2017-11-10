@@ -1,0 +1,2 @@
+<app-search-field [term]="term" [placeholderText]="placeholderText" (search)="term=$event; search.emit(term)"></app-search-field>
+<app-search-suggestions [term]="term" (search)="term=$event; search.emit(term)"></app-search-suggestions>
