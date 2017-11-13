@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let cat of cats">
+    {{cat}}
+  </li>
+</ul>
+
+<input (input)="newCatName=$event.target.value" />
+<button (click)="handleNewCat(newCatName)">Add Cat: {{newCatName}}</button>
